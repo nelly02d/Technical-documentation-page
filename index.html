@@ -23,43 +23,166 @@
   <main id="main-doc">
     <section class="main-section" id="introduction">
       <header>Introduction</header>
-        <p></p>
-        <code></code>
+        <p>JavaScript is a powerful programming language that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation).</p>
+        <p>JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!</p>
+        <p>JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:</p>
+        <ul>
+          <li>Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.</li>
+          <li>Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook.</li>
+          <li>Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.</li>
+        </ul>
     </section>
     <section class="main-section" id="hello_world">
       <header>Hello World</header>
-        <p></p>
-        <code></code>
+        <p>JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.</p>
+        <p>However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example.</p>
+        <ol>
+          <li>Go to your test site and create a new folder named scripts. Within the scripts folder, create a new file called main.js, and save it.</li>
+          <!-- <li>In your index.html file, enter this code on a new line, just before the closing </body> tag: --></li>
+          <code><script src="scripts/main.js"></script></code>
+          <!-- <li>This is doing the same job as the <link> element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).</li> -->
+          <li>Add this code to the main.js file:</li>
+          <code>const myHeading = document.querySelector('h1');
+            myHeading.textContent = 'Hello world!';</code>
+        </ol>   
     </section>
     <section class="main-section" id="variables">
       <header>Variables</header>
-        <p></p>
-        <code></code>
+        <p>Variables are containers that store values. You start by declaring a variable with the var (less recommended, dive deeper for the explanation) or the let keyword, followed by the name you give to the variable:</p>
+        <code>let myVariable = 'Bob';</code>
+        <table>
+          <tr>
+            <th class="bold">Variable</th>
+            <th class="bold">Explanation</th>
+            <th class="bold">Example</th>
+          </tr>
+          <tr>
+            <td class="bold"><a href="https://developer.mozilla.org/en-US/docs/Glossary/String">String</a></td>
+            <td >This is a sequence of text known as a string. To signify that the value is a string, enclose it in single quote marks.</td>
+            <td><code>let myVariable = 'Bob';</code></td>
+          </tr>
+          <tr>
+            <td class="bold"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a></td>
+            <td>This is a number. Numbers don't have quotes around them.</td>
+            <td><code>let myVariable = 10;</code></td>
+          </tr>
+          <tr>
+            <td class="bold"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean">Boolean</a></td>
+            <td>This is a True/False value. The words true and false are special keywords that don't need quote marks.</td>
+            <td><code>let myVariable = true;</code></td>
+          </tr>
+          <tr>
+            <td class="bold"><a href="https://developer.mozilla.org/en-US/docs/Glossary/array">Array</a></td>
+            <td>This is a structure that allows you to store multiple values in a single reference.</td>
+            <td><code>let myVariable = [1,'Bob','Steve',10];</code>Refer to each member of the array like this: myVariable[0], myVariable[1], etc.</td>
+          </tr>
+          <tr>
+            <td class="bold"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Object">Object</a></td>
+            <td>This can be anything. Everything in JavaScript is an object and can be stored in a variable. Keep this in mind as you learn.</td>
+            <td><code>let myVariable = document.querySelector('h1');</code>All of the above examples too.</td>
+          </tr>
+        </table>
+        <p>So why do we need variables? Variables are necessary to do anything interesting in programming. If values couldn't change, then you couldn't do anything dynamic, like personalize a greeting message or change an image displayed in an image gallery.</p>
     </section>
     <section class="main-section" id="comments">
       <header>Comments</header>
-        <p></p>
-        <code></code>
+        <p>Comments are snippets of text that can be added along with code. The browser ignores text marked as comments. You can write comments in JavaScript just as you can in CSS:</p>
+        <code>/*
+          Everything in between is a comment.
+          */</code>
+          <p>If your comment contains no line breaks, it's an option to put it behind two slashes like this:</p>
+          <code>// This is a comment</code>
     </section>
     <section class="main-section" id="operators">
       <header>Operators</header>
-        <p></p>
-        <code></code>
+        <p>An operator is a mathematical symbol that produces a result based on two values (or variables). In the following table, you can see some of the simplest operators, along with some examples to try in the JavaScript console.</p>
+        <table>
+          <tr>
+            <th class="bold">Operator</th>
+            <th class="bold">Explanation</th>
+            <th class="bold">Symbol(s)</th>
+            <th class="bold">example</th>
+          </tr>
+          <tr>
+            <td class="bold">Addition</td>
+            <td>Add two numbers together or combine two strings.</td>
+            <td>+</td>
+            <td>6 + 9; 'Hello ' + 'world!';</td>
+          </tr>
+          <tr>
+            <td class="bold">Subtraction, Multiplication, Division</td>
+            <td>These do what you'd expect them to do in basic math.</td>
+            <td>-, *, /</td>
+            <td>9 - 3; 8 * 2; // multiply in JS is an asterisk 9 / 3;</td>
+          </tr>
+          <tr>
+            <td class="bold">Assignment</td>
+            <td>As you've seen already: this assigns a value to a variable.</td>
+            <td>=</td>
+            <td>let myVariable = 'Bob';</td>
+          </tr>
+          <tr>
+            <td class="bold">Equality</td>
+            <td>This performs a test to see if two values are equal. It returns a true/false (Boolean) result.</td>
+            <td>===</td>
+            <td>let myVariable = 3; myVariable === 4;</td>
+          </tr>
+          <tr>
+            <td class="bold">Not, Does-not-equal</td>
+            <td>This returns the logically opposite value of what it precedes. It turns a true into a false, etc.. When it is used alongside the Equality operator, the negation operator tests whether two values are not equal.</td>
+            <td>!, !==</td>
+            <td>For "Not", the basic expression is true, but the comparison returns false because we negate it:
+
+              let myVariable = 3;
+              !(myVariable === 3);
+              
+              "Does-not-equal" gives basically the same result with different syntax. Here we are testing "is myVariable NOT equal to 3". This returns false because myVariable IS equal to 3:
+              
+              let myVariable = 3;
+              myVariable !== 3;</td>
+          </tr>
+        </table>
     </section>
     <section class="main-section" id="conditionals">
       <header>Conditonals</header>
-        <p></p>
-        <code></code>
+        <p>Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the if ... else statement. For example:</p>
+        <code>let iceCream = 'chocolate';<br>
+          if(iceCream === 'chocolate') {<br>
+            alert('Yay, I love chocolate ice cream!');<br>
+          } else {<br>
+            alert('Awwww, but chocolate is my favorite...');<br>
+          }</code>
+          <p>The expression inside the if( ... ) is the test. This uses the identity operator (as described above) to compare the variable iceCream with the string chocolate to see if the two are equal. If this comparison returns true, the first block of code runs. If the comparison is not true, the second block of code—after the else statement—runs instead.</p>
     </section>
     <section class="main-section" id="functions">
       <header>Functions</header>
-        <p></p>
-        <code></code>
+        <p>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code. You have already seen some uses of functions previously. For example:</p>
+        <code>let myVariable = document.querySelector('h1');<br>
+          alert('hello!');
+        </code>
+        <p>These functions, document.querySelector and alert, are built into the browser.</p>
+        <p>If you see something which looks like a variable name, but it's followed by parentheses— () —it is likely a function. Functions often take arguments: bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.</p>
+        <p>For example, the alert() function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what message to display.</p>
+        <p>You can also define your own functions. In the next example, we create a simple function which takes two numbers as arguments and multiplies them:</p>
+        <code>function multiply(num1,num2) {<br>
+          let result = num1 * num2;<br>
+          return result;
+        }</code>
+        <p>Try running this in the console; then test with several arguments. For example:</p>
+        <code>multiply(4, 7);<br>
+          multiply(20, 20);<br>
+          multiply(0.5, 3);</code>
     </section>
     <section class="main-section" id="events">
       <header>Events</header>
-        <p></p>
-        <code></code>
+        <p>Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response. The most obvious example is handling the click event, which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following into your console, then click on the current webpage:</p>
+        <code>document.querySelector('html').onclick = function() {alert('Ouch! Stop poking me!');}</code>
+        <p>There are many ways to attach an event handler to an element. Here we select the <html> element, setting its onclick handler property equal to an anonymous (i.e. nameless) function, which contains the code we want the click event to run.</p>
+        <p>Note that</p>
+        <code>document.querySelector('html').onclick = function() {};</code>
+        <p>is equivalent to</p>
+        <code>let myHTML = document.querySelector('html');<br>
+          myHTML.onclick = function() {};</code>
     </section>
   </main>
 </body>
