@@ -5,11 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <title>Technical Documentation Page</title>
 </head>
 <body>
   <nav id="navbar">
-    <header>Java Script Basics</header>
+    <header><i class="fab fa-js-square"></i>Java Script Basics</header>
     <ul>
       <li><a class="nav-link" href="#introduction">Introduction</a></li>
       <li><a class="nav-link" href="#hello_world">Hello World</a></li>
@@ -39,11 +40,11 @@
         <p>However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example.</p>
         <ol>
           <li>Go to your test site and create a new folder named scripts. Within the scripts folder, create a new file called main.js, and save it.</li>
-          <!-- <li>In your index.html file, enter this code on a new line, just before the closing </body> tag: --></li>
+          <li>In your index.html file, enter this code on a new line, just before the closing </body> tag:</li>
           <code><script src="scripts/main.js"></script></code>
-          <!-- <li>This is doing the same job as the <link> element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).</li> -->
+          <li>This is doing the same job as the <link> element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).</li>
           <li>Add this code to the main.js file:</li>
-          <code>const myHeading = document.querySelector('h1');
+          <code>const myHeading = document.querySelector('h1');<br>
             myHeading.textContent = 'Hello world!';</code>
         </ol>   
     </section>

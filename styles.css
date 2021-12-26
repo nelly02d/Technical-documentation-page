@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Poppins&family=Ubuntu&display=swap");
+
+/* Global style
+---------------------------------- */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar
+---------------------------------- */
+
+#navbar {
+  position: fixed;
+  min-width: 350px;
+  z-index: 1;
+  width: 20%;
+  background-color: rgb(240, 236, 35);
+  height: 100%;
+  /* list-style: none; */
+}
+
+#navbar header {
+  padding: 20px;
+  font-size: 1.5rem;
+  color: #2e2d2d;
+}
+
+i {
+  margin-right: 5px;
+}
+
+#navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#navbar li {
+  width: 100%;
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+#navbar a {
+  display: flex;
+  text-decoration: none;
+  padding: 20px 40px;
+  cursor: pointer;
+  width: 100%;
+  color: #2e2d2d;
+  transition: all ease 0.3s;
+}
+
+#navbar a:hover {
+  background-color: #2e2d2d;
+  color: #ffe4b5;
+}
+
+#main-doc {
+  margin-left: 400px;
+}
