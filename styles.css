@@ -60,15 +60,15 @@ i {
   color: #ffe4b5;
 }
 
+/* Main Content
+---------------------------------- */
+
 #main-doc {
   margin-left: 400px;
 }
 
-/* Main Content
----------------------------------- */
-
 .main-section {
-  padding: 20px 30px 0 0;
+  padding: 20px 30px 20px 0;
   text-align: justify;
 }
 
