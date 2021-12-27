@@ -11,13 +11,14 @@
 <body>
   <nav id="navbar">
     <header><i class="fab fa-js-square"></i>Java Script Basics</header>
+    <hr>
     <ul>
       <li><a class="nav-link" href="#introduction">Introduction</a></li>
       <li><a class="nav-link" href="#hello_world">Hello World</a></li>
       <li><a class="nav-link" href="#variables">Variables</a></li>
       <li><a class="nav-link" href="#comments">Comments</a></li>
       <li><a class="nav-link" href="#operators">Operators</a></li>
-      <li><a class="nav-link" href="#conditonals">Conditonals</a></li>
+      <li><a class="nav-link" href="#conditionals">Conditonals</a></li>
       <li><a class="nav-link" href="#functions">Functions</a></li>
       <li><a class="nav-link" href="#events">Events</a></li>
     </ul>
@@ -25,6 +26,7 @@
   <main id="main-doc">
     <section class="main-section" id="introduction">
       <header>Introduction</header>
+      <hr class="horizontal-line">
         <p>JavaScript is a powerful programming language that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation).</p>
         <p>JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!</p>
         <p>JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:</p>
@@ -36,12 +38,13 @@
     </section>
     <section class="main-section" id="hello_world">
       <header>Hello World</header>
+      <hr class="horizontal-line">
         <p>JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.</p>
         <p>However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example.</p>
         <ol>
           <li>Go to your test site and create a new folder named scripts. Within the scripts folder, create a new file called main.js, and save it.</li>
-          <li>In your index.html file, enter this code on a new line, just before the closing </body> tag:</li>
-          <code><script src="scripts/main.js"></script></code>
+          <li>In your index.html file, enter this code on a new line, just before the closing &lt;/body&gt; tag:</li>
+          <code>&lt;script src="scripts/main.js"&gt;&lt;/script&gt;</code>
           <li>This is doing the same job as the <link> element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).</li>
           <li>Add this code to the main.js file:</li>
           <code>const myHeading = document.querySelector('h1');<br>
@@ -50,6 +53,7 @@
     </section>
     <section class="main-section" id="variables">
       <header>Variables</header>
+      <hr class="horizontal-line">
         <p>Variables are containers that store values. You start by declaring a variable with the var (less recommended, dive deeper for the explanation) or the let keyword, followed by the name you give to the variable:</p>
         <code>let myVariable = 'Bob';</code>
         <table>
@@ -61,33 +65,34 @@
           <tr>
             <td class="bold"><a href="https://developer.mozilla.org/en-US/docs/Glossary/String">String</a></td>
             <td >This is a sequence of text known as a string. To signify that the value is a string, enclose it in single quote marks.</td>
-            <td><code>let myVariable = 'Bob';</code></td>
+            <td>let myVariable = 'Bob';</td>
           </tr>
           <tr>
             <td class="bold"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Number">Number</a></td>
             <td>This is a number. Numbers don't have quotes around them.</td>
-            <td><code>let myVariable = 10;</code></td>
+            <td>let myVariable = 10;</td>
           </tr>
           <tr>
             <td class="bold"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean">Boolean</a></td>
             <td>This is a True/False value. The words true and false are special keywords that don't need quote marks.</td>
-            <td><code>let myVariable = true;</code></td>
+            <td>let myVariable = true;</td>
           </tr>
           <tr>
             <td class="bold"><a href="https://developer.mozilla.org/en-US/docs/Glossary/array">Array</a></td>
             <td>This is a structure that allows you to store multiple values in a single reference.</td>
-            <td><code>let myVariable = [1,'Bob','Steve',10];</code>Refer to each member of the array like this: myVariable[0], myVariable[1], etc.</td>
+            <td>let myVariable = [1,'Bob','Steve',10];<br>Refer to each member of the array like this: myVariable[0], myVariable[1], etc.</td>
           </tr>
           <tr>
             <td class="bold"><a href="https://developer.mozilla.org/en-US/docs/Glossary/Object">Object</a></td>
             <td>This can be anything. Everything in JavaScript is an object and can be stored in a variable. Keep this in mind as you learn.</td>
-            <td><code>let myVariable = document.querySelector('h1');</code>All of the above examples too.</td>
+            <td>let myVariable = document.querySelector('h1');<br>All of the above examples too.</td>
           </tr>
         </table>
         <p>So why do we need variables? Variables are necessary to do anything interesting in programming. If values couldn't change, then you couldn't do anything dynamic, like personalize a greeting message or change an image displayed in an image gallery.</p>
     </section>
     <section class="main-section" id="comments">
       <header>Comments</header>
+      <hr class="horizontal-line">
         <p>Comments are snippets of text that can be added along with code. The browser ignores text marked as comments. You can write comments in JavaScript just as you can in CSS:</p>
         <code>/*
           Everything in between is a comment.
@@ -97,6 +102,7 @@
     </section>
     <section class="main-section" id="operators">
       <header>Operators</header>
+      <hr class="horizontal-line">
         <p>An operator is a mathematical symbol that produces a result based on two values (or variables). In the following table, you can see some of the simplest operators, along with some examples to try in the JavaScript console.</p>
         <table>
           <tr>
@@ -147,17 +153,19 @@
     </section>
     <section class="main-section" id="conditionals">
       <header>Conditonals</header>
+      <hr class="horizontal-line">
         <p>Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the if ... else statement. For example:</p>
         <code>let iceCream = 'chocolate';<br>
           if(iceCream === 'chocolate') {<br>
-            alert('Yay, I love chocolate ice cream!');<br>
+            <span class="indent">alert('Yay, I love chocolate ice cream!');</span><br>
           } else {<br>
-            alert('Awwww, but chocolate is my favorite...');<br>
+            <span class="indent">alert('Awwww, but chocolate is my favorite...');</span<br>
           }</code>
           <p>The expression inside the if( ... ) is the test. This uses the identity operator (as described above) to compare the variable iceCream with the string chocolate to see if the two are equal. If this comparison returns true, the first block of code runs. If the comparison is not true, the second block of code—after the else statement—runs instead.</p>
     </section>
     <section class="main-section" id="functions">
       <header>Functions</header>
+      <hr class="horizontal-line">
         <p>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code. You have already seen some uses of functions previously. For example:</p>
         <code>let myVariable = document.querySelector('h1');<br>
           alert('hello!');
@@ -177,6 +185,7 @@
     </section>
     <section class="main-section" id="events">
       <header>Events</header>
+      <hr class="horizontal-line">
         <p>Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response. The most obvious example is handling the click event, which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following into your console, then click on the current webpage:</p>
         <code>document.querySelector('html').onclick = function() {alert('Ouch! Stop poking me!');}</code>
         <p>There are many ways to attach an event handler to an element. Here we select the <html> element, setting its onclick handler property equal to an anonymous (i.e. nameless) function, which contains the code we want the click event to run.</p>
